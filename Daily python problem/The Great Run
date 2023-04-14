@@ -33,9 +33,9 @@ He can impress 4+8=12 girls if he runs at his best speed between the 2nd and the
 for _ in range(int(input())):
     n, k = map(int,input().split())
     girls_list = list(map(int,input().split()))
-    res = 0
+    result_ha = 0
     for win in range(n-1):
-        if sum(girls_list[win:win+k]) > res:
-            res = sum(girls_list[win:win+k])
+        if sum(girls_list[win:win+k]) > result_ha:
+           result_ha= sum(girls_list[win:win+k])
     else:
-        print(res)
+        print(result_ha)
