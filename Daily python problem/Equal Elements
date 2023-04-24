@@ -1,0 +1,42 @@
+#Find the minimum number of operations required to make all #elements of the array equal.
+#
+def Equal_Elements(size_of_arr,ele_arr):
+  mydict={}
+    
+  for item in ele_arr:
+      if item in mydict:
+            mydict[item]+=1 
+      else:
+            mydict[item]=1 
+            
+  value=max(mydict.values())  #maximum frequency stored 
+  return size_of_arr-value  #substract from size of array
+  
+n=int(input())
+for i in range(n):
+    num=int(input())
+    a=list(map(int,input().split()))
+    print(Equal_Elements(num,a))
+    
+'''
+test cases =3
+ size of array= 3
+1 2 3
+size of array= 4
+2 2 3 1
+size of array= 4
+3 1 2 4
+
+output:
+2
+2
+3
+'''
+Explanation:
+First, we are taking input. The main logical Part of this Solution is that if we find the frequency of every element 
+which is present in the array and store it in the dictionary named mydict after that, 
+we find the max value from the dictionary, and after finding that we subtract it from the size of an array which is n.
+
+
+
+
