@@ -1,0 +1,32 @@
+'''
+Problem
+Problem Statement
+Write a program that accepts sets of three numbers, and prints the second-maximum number among the three.
+
+Input
+First line contains the number of triples, N.
+The next N lines which follow each have three space separated integers.
+Output
+For each of the N triples, output one new line which contains the second-maximum integer among the three.
+'''
+# cook your dish here
+
+def num(x,y,z):
+        a = [x, y, z]
+        return (sorted(a)[1])
+ 
+n=int(input())
+for i in range(n):
+    x,y,z=map(int,input().split())
+    print(num(x,y,z))
+    
+    
+    
+'''
+for _ in range(int(input())):
+    nums = list(map(int, input().split()))
+    nums.remove(max(nums))
+    print(max(nums))
+'''
+
+
