@@ -37,5 +37,32 @@ for i in range(m):
 Then we measure the length of the "new" list by converting it to a set (as converting in a set removes duplicated elements).
 
 
+'''
+
+T = int(input())
+for _ in range(T):
+    n,x = map(int,input().split())
+    s = input()
+    arr = []
+    arr.append(x)
+    for i in range(n):
+        if s[i]=='R' :
+            x+=1
+            arr.append(x)   
+        else:
+            x-=1
+            arr.append(x)   
+    print(len(set(arr)))
+    
+    
+'''
+'''
+for lines 5 and 6, You have to take a blank array in which the values which will be updated later on, could be kept.
+for lines 7 to 14, a for loop is introduced in which the values at every index in the for loop will be checked.
+then if the value of s[i], i.e. the value on i-th index is 'R' increase 
+the given X value and append it in the 'arr' array. and Lastly, print the length of set values that occurred in the 'arr' array.
+'''
+
+
 
 
