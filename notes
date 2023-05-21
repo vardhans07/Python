@@ -1,0 +1,55 @@
+Uses of Double Star(**) Operator
+Using ** As Exponentiation Operator:
+It is also known for Using in numeric data to perform Exponetiatial operation
+
+Example
+The following program the use of ** operator as power operator in expressions −
+
+# using the double asterisk operator as an exponential operator
+x = 2
+y = 4
+
+# getting exponential value of x raised to the power y
+result_1 = x**y
+
+# printing the value of x raised to the power y
+print("result_1: ", result_1)
+
+# getting the resultant value according to the
+# Precedence of Arithmetic Operators
+result_2 = 4 * (3 ** 2) + 6 * (2 ** 2 - 5)
+
+print("result_2: ", result_2)
+Output
+On executing, the above program will generate the following output −
+
+result_1:  16
+result_2:  30
+Using **As Arguments in Functions and Methods:
+The double asterisk is also known as **kwargs in a function definition. it is used for passing a variable-length keyword dictionary to a function
+
+We can print **kwargs argument using a small function that is shown in the following example −
+
+Example
+The following program shows the use of kwargs in user-defined function −
+
+# creating a function that prints the dictionary of names.
+def newfunction(**kwargs):
+   # traversing through the key-value pairs if the dictionary
+      for key, value in kwargs.items():
+   # formatting the key, values of a dictionary
+   # using format() and printing it
+      print("My favorite {} is {}".format(key, value))
+# calling the function by passing the any number of arguments
+newfunction(language_1="Python", language_2="Java", language_3="C++")
+Output
+On executing, the above program will generate the following output −
+
+My favorite language_1 is Python
+My favorite language_2 is Java
+My favorite language_3 is C++
+We can use the keyword argument in our code easily with the help of **kwargs. The best part is we can pass a good number of argument to a function when we utilize **kwargs as a parameter. Creating functions that accept **kwargs is best used when the number of inputs in the argument list is expected to be relatively minimal.
+
+Conclusion
+This article taught us about Python's ** operator. We learned about the precedence of operators in the Python compiler, as well as how to utilize the ** operator, which functions like a kwargs and may accept any amount of arguments for a function and is also used to calculate the power.
+
